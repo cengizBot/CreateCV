@@ -1,0 +1,46 @@
+{
+  "name": "createcv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "base64url": "^3.0.1",
+    "body-parser": "^1.19.0",
+    "convertapi": "^1.4.0",
+    "cookie-parser": "^1.4.5",
+    "crypto": "^1.0.1",
+    "docx-pdf": "0.0.1",
+    "docxtemplater": "^3.17.6",
+    "dotenv": "^8.2.0",
+    "encrypt-decrpt-pdf": "^1.0.10",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "file-encryptor": "^0.1.1",
+    "folder-encrypt": "^1.1.7",
+    "fs-extra": "^9.0.1",
+    "helmet": "^3.22.0",
+    "iva-converter": "^1.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "libreoffice-convert": "^1.1.1",
+    "move-file": "^2.0.0",
+    "node-localstorage": "^2.1.6",
+    "node-msoffice-pdf": "0.0.7",
+    "nodejs-pptx": "^1.0.1",
+    "office-to-pdf": "^4.0.0",
+    "pizzip": "^3.0.6",
+    "requirejs": "^2.3.6",
+    "socket.io": "^2.3.0",
+    "word2pdf": "0.0.1-security",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "author": "",
+  "license": "ISC"
+}

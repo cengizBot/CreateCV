@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <link src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"  rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <link href="css/app.css" rel="stylesheet" >
+    </head>
+    <body>
+   
+        <nav class="navbar navbar-light justify-content-between nav_back">
+            <div>
+                 <img class="img_nav" src="cv.png">
+                 <a class="navbar-brand title_navbar">Curriculum Vitae FAST</a>
+            </div>
+        </nav>
+
+        <div class="fond_theme">
+            <div class="header_theme" style="padding-top: 100px;">
+                <h1 class="other_fami title_fond white">Créez un CV très rapidement</h1>
+                <div class="line_header"></div>
+                <h1 class="other_fami title_fond white">Avec notre formulaire</h1>
+            </div>
+
+        </div>
+
+        <div class="section_choice_type_cv">
+            <div class="present center" style="padding: 1px;">
+                <p class="center">Bienvenu sur Curriculum Vitae FAST le principe est simple, nous nous occupons de la création de votre cv par le biais de notre formulaire, il suffit de renseigner les diverses informations vous concernant dans les différents champs.</p>
+                <div class="line_green"></div>
+                
+                <div class="start_btn" style="margin-top:50px">
+                    Commencer
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="row" style="margin-right: 0px;">
+        
+            <div class="col-lg-6">
+
+                <div class="div_form_style" id="div_form_about">
+                    Fomulaire à propos de vous
+                    <img class="open_form" src="fleche.png" style="float: right;width:22px;cursor: pointer;">
+                    <form id="form_about" style="display: none;opacity: 0;margin-top: 5px;">
+                          <div class="form-group">
+                            <label for="name_label">Nom</label>
+                            <input type="text" class="form-control" id="form_name" placeholder="Enter un nom">
+                          </div>
+                          <div class="form-group">
+                            <label for="name_prenom">Prénom</label>
+                            <input type="text" class="form-control" id="form_firstname" placeholder="Enter un prénom">
+                          </div>
+                          <div class="form-group">
+                            <label for="name_profil">Profil</label>
+                            <textarea class="form-control" id="form_profil" placeholder="Entrer un court texte vous décrivant" rows="3"></textarea>
+                          </div>
+                          <div class="form-group">
+                            <label for="name_poste">Poste demande</label>
+                            <input type="text" class="form-control" id="form_post" placeholder="Entrer le poste demandé">
+                          </div>
+                          <div class="form-group">
+                            <label for="name_tel">Téléphone</label>
+                            <input type="text" class="form-control" id="form_tel" placeholder="Entrer un numéro de téléphone">
+                          </div>
+                          <div class="form-group">
+                            <label for="name_tel">Adresse</label>
+                            <input type="text" class="form-control" id="form_addr" placeholder="Entrer une Adresse">
+                          </div>
+                          <div class="form-group">
+                            <label for="name_tel">Email</label>
+                            <input type="text" class="form-control" id="form_email" placeholder="Entrer un email">
+                          </div>
+                    </form>
+                </div>
+
+                <div class="div_form_style" id="div_form_about">
+                    Fomulaire Formations (Diplômes)
+                    <img class="open_form" src="fleche.png" style="float: right;width:22px;cursor: pointer;">
+
+                    <form id="form_formations" style="display: none;opacity: 0;margin-top: 5px;">
+                        
+                        <div class="form-group">
+                            <label for="name_label">Formation</label>
+                            <input type="text" class="form-control" id="form_diplome0" placeholder="Entrer un diplômes">
+                            Date Début : <select  id="form_diplome_month" class="form-control form-control-sm inline month">
+                                <option value="mois">Mois</option>
+                                <option value="Janvier">Janvier</option>
+                                <option value="Février">Février</option>
+                                <option value="Mars">Mars</option>
+                                <option value="Avril">Avril</option>
+                                <option value="Mai">Mai</option>
+                                <option value="Juin">Juin</option>
+                                <option value="Juillet">Juillet</option>
+                                <option value="Août">Août</option>
+                                <option value="Septembre">Septembre</option>
+                                <option value="Octobre">Octobre</option>
+                                <option value="Novembre">Novembre</option>
+                                <option value="Décembre">Décembre</option>
+                            </select>
+                            <input id="form_diplome_years" class="form-control inline years" type="text" placeholder="Année">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name_label">Formation</label>
+                            <input type="text" class="form-control" id="form_diplome1" placeholder="Entrer un diplômes">
+                        </div>
+
+                        <img id="add_formations" src="add.png" >
+                    </form>
+                
+                </div>
+
+  
+            </div>
+
+            <div class="col-lg-6">
+                   <div class="div_see_cv"></div>
+            </div>
+
+        </div>
+
+
+
+        <p>Create your CV</p>
+        <button id="create_docx">Generate document</button>
+        
+        <a href="#" id="ajax">Ajax</a>
+
+        <script>
+            
+            function getCookie(cname) {
+                var name = cname + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var ca = decodedCookie.split(';');
+                for(var i = 0; i <ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+        </script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/create.js"></script>
+        <script src="js/animate_form.js"></script>
+        <script>
+
+        let token = getCookie('token');
+
+        $('#ajax').click(function(event){
+            event.preventDefault();
+                var settings = {
+                    "async": true,
+                    "crossDomain": true,
+                    "url": "http://localhost:3000/dowloadCV",
+                    "method": "POST",
+                    "headers": {
+                        "Content-Type": "application/x-www-form-urlencoded",
+                        "Authorization": `Bearer ${token}`
+                    }
+                }
+
+                $.ajax(settings).done(function (response) {
+                        // response = response.toString();
+
+                        // Folder client_id
+                        //      child folder encryptfolder
+                        //          child file in (cv pdf)
+
+                        // folder name of client_id
+                        let client_id = response[0].client_id;
+                        // folder child name of encryptfolder
+                        let decryptfolder = response[0].decryptfolder;
+                        var a = document.createElement('a');
+                        var url = `${client_id}/${decryptfolder}/example.pdf`;
+                        console.log(url);
+                        a.href = url;
+                        a.target = '_blanck';
+                        a.textContent= "cengiz kurt";
+                        // a.download = 'example.pdf';
+                        document.body.append(a);
+                        a.click();
+                        // a.remove();
+                     
+                })
+
+            
+
+        })
+           
+
+
+        </script>
+     
+
+    </body>
+</html>
