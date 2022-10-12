@@ -10,7 +10,7 @@
     "cookie-parser": "^1.4.5",
     "crypto": "^1.0.1",
     "docx-pdf": "0.0.1",
-    "docxtemplater": "^3.17.6",
+    "docxtemplater": "^3.31.4",
     "dotenv": "^8.2.0",
     "encrypt-decrpt-pdf": "^1.0.10",
     "express": "^4.17.1",
